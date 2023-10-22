@@ -118,7 +118,7 @@ export default function Home() {
                 renderItem={({ item }) => <HistoricoList data={item} deleteItem={handleDelete} />}
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 20 }}
-                ListEmptyComponent={() => <Title>Não há transações...</Title>}
+                ListEmptyComponent={() => <Title style={{ alignSelf: 'center', marginTop: 200, fontStyle: 'italic', fontWeight: 'normal' }}>Não há transações...</Title>}
             />
 
             <Modal visible={modalVisible} animationType="fade" transparent={true}>
